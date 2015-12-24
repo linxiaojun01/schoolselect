@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh" class="no-js">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<title>创建版块</title>
+<link href="style/themes-pc.css" rel="stylesheet" type="text/css" />
+<link href="style/layout-pc.css" rel="stylesheet" type="text/css" />
+<link href="style/master-pc.css" rel="stylesheet" type="text/css" />
+
+<link  href="style/selectschool.css" rel="stylesheet" type="text/css" />
+
+<script src="javascript/jquery-1.9.1.min.js"></script>
+<script src="javascript/school.js"></script>
+<script src="javascript/workdate.js"></script>
+</head>
+<body>
+<div class="layout" id="layout">
+  <div class="wrapper" id="frame_wrapper">
+      <div class="main" role="main" aria-label="主体区块" id="frame_main">
+        <div class="row margin-t" id="frame_main_row1">
+            <div class="topic-box radius secondary-bg" id="frame_topic_box1">
+            	<div class="white-bg" id="data_box_con">
+                    <div class="topic-head clearfix">
+                        <div class="topic-title small-inline left"><h3 class="inline">创建版块</h3></div> 
+                    </div>
+                    <div class="topic-con">
+                        <form data-abide>
+                          
+                          <div class="row">
+                          <div class="large-12 columns school" id="selectSchool1">
+                               <div class="schooltype small-12 medium-3 large-3 columns small-padding-b padding-r10">
+                               <span class="select-border">
+                               		<span class="select-hide-border">
+                               			<select name="" id="school-type" class="small-margin-l0 medium-margin-l0 large-margin-l0 small-margin-t medium-margin-t large-margin-t" required="" aria-invalid="false">
+                                                      <option value="">学校类型</option>
+                                                      <option value="first">大学</option>
+                                                      <option value="second">高中</option>
+                                                      <option value="third">初中</option>
+                                                      <option value="fourth">小学</option>
+                               			</select>
+                               		</span>
+                               </span>
+                               </div>
+                               
+                               <div class="chooseschool small-12 medium-5 large-5 columns padding-r10">
+                                    <div class="select-school-box small-margin-l0 medium-margin-l0 large-margin-l10 small-margin-t0 medium-margin-t large-margin-t">
+                                                        <input class="houseicon" type="text" id="schoolName" placeholder="请点击选择学校" value="" name=" " readonly/>
+                                                       
+                                                        <div id="proSchool" class="provinceSchool">
+                                                        	<div class="school-select">
+                                                            <div class="proSelect" id="proselect">
+                                                                <span class="select-border">
+                                                                    <span class="select-hide-border">
+                                                                    <select></select>
+                                                                    </span>
+                                                                </span>
+                                                                <div class=""></div>
+                                                                <div class="span1"><span>如没找到选择项，请选择其他手动填写</span></div>
+                                                                <div class="span2" style="display:none"><span>请在输入框内手动输入学校！</span></div>
+                                                                <input type="text"/>
+                                                            </div>
+                                                            <div class="schoolList" id="schoolList">
+                                                                <ul></ul>
+                                                            </div>
+                                                            <div class="btn-select-school">
+                                                                <button flag='1' class="submit_btn hide">确定</button>
+                                                                <button flag='0' class="cancle_btn">取消</button>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                               </div>
+                               <div class="years small-12 medium-4 large-4 columns">
+                               <div class="small-margin-l0 medium-margin-l0 large-margin-l10 small-margin-t medium-margin-t large-margin-t" required="" aria-invalid="false" id="school-year">
+                               <span class="select-border">
+                               		<span class="select-hide-border">
+                               			<select class="small-margin-l0 medium-margin-l0 large-margin-l10 small-margin-t medium-margin-t large-margin-t" required="" aria-invalid="false" id="sy">
+                                                	<option selected='selected' value="">请选择</option>
+                                                </select>
+                                    </span>
+                               </span>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                        </form>
+                        
+                    </div>
+                    <div class="topic-footer clearfix">
+                        <div class="row">
+                            <div class="small-12 right">
+                                <a class="right button radius success1">确定</a>
+                                <a class="right button radius secondary1 margin-r">取消</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      </div>  
+  <div id="frame_javascript">
+  	<div id="data_javascript">
+		
+		<script>
+			$.divselect('selectSchool1');
+        </script>
+        <!--[if IE 6]>
+        <script src="javascript/DD_belatedPNG.js"></script> 
+        <script>
+            DD_belatedPNG.fix('.laydate_body .laydate_top .laydate_chprev');
+            DD_belatedPNG.fix('.laydate_body .laydate_top .laydate_chnext');
+            DD_belatedPNG.fix('.top-banner .banner-img a'); 
+        </script>
+    <![endif]-->
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>

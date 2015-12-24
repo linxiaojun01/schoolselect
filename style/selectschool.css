@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+#schoolName {
+  border: 1px solid #ccc;
+  padding: 0 0px;
+  cursor: pointer;
+  font-size: 12px;
+  text-indent: 10px;
+}
+.provinceSchool {
+  display: none;
+  position: absolute;
+  width: 704px;
+  height: auto;
+  border: 1px solid #ddd;
+  background: white;
+  z-index: 2;
+}
+.provinceSchool .title {
+  width: 100%;
+  height: 30px;
+  background: #227dc5;
+  cursor: move;
+}
+.provinceSchool .title span {
+  margin-left: 10px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 30px;
+}
+
+.provinceSchool .proSelect select {
+  width: 207px;
+  background-position: right center;
+  float: left;
+  
+}
+.provinceSchool .proSelect span {
+  padding-left: 10px;
+  display: block;
+  float: left;
+  line-height: 37px;
+  font-size: 12px;
+}
+.provinceSchool .proSelect input {
+  display: none;
+  margin-bottom: 10px;
+}
+.school-select .proSelect .searchschool input {
+  display: inline-block;
+  width: 300px;
+  margin-right: 5px;
+}
+.provinceSchool .schoolList {
+  width: 701px;
+  height: 180px;
+  padding: 10px 0;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  *margin-top:16px;
+}
+.provinceSchool .schoolList ul {
+  clear: both;
+  padding: 0 10px;
+}
+.provinceSchool .schoolList ul span.entertext {
+  display: block;
+  height: 180px;
+  font: normal 16px/180px 'microsoft yahei';
+  color: #999;
+  width: 210px;
+  margin: 0px auto;
+}
+.provinceSchool .schoolList ul a {
+    padding: 0 9px;
+    float: left;
+    text-align: left;
+    width: 192px;
+    margin: 5px;
+    cursor: pointer;
+    background: #fafafa;
+    font-size: 14px;
+  }
+
+.provinceSchool .schoolList ul a.DoubleWidthLi {
+  overflow: hidden;
+}
+.provinceSchool .schoolList ul a.active,
+.provinceSchool .schoolList ul a:hover {
+  background: #227dc5;
+  color: #fff;
+}
+
+.btn-select-school {
+  margin-top: 10px;
+}
+.btn-select-school .button {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+}
+.btn-select-school button {
+  margin-bottom: 10px;
+  float: right;
+  margin-right: 10px;
+  background: #227dc5;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-family: "微软雅黑";
+  *width:66px;
+	*height:37px;
+}
+.btn-select-school button.cancle_btn {
+  background: #e9e9e9;
+  color: #000;
+}
+.btn-select-school button:hover {
+  box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.125);
+  -o-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.125);
+}
+.select-school-box {
+  position: relative;
+  
+}
+.select-school-box input.houseicon{
+	_width:382px;}
+.proSelect input{
+	_width:680px;}
+.school-icon {
+  top: 0px;
+  line-height: 32px;
+  left: 0px;
+  padding-left: 8px;
+  position: absolute;
+  cursor: pointer;
+}
+.school-icon:active,
+.school-icon:hover {
+  color: #227dc5;
+}
+
+/*pc版*/
+
+.schooltype {
+	width:240px;
+	*padding-bottom:12px;
+	_padding-right:0px !important;
+	}
+
+.chooseschool{
+	width:382px;
+	}
+
+.houseicon{
+	background:url(../images/university.png);
+	background-repeat: no-repeat;
+  	background-position: right center;
+	}
+
+.provinceSchool .proSelect {
+  padding-top: 15px;
+  margin: 0px 10px;
+}
+.years{
+	width:270px;
+	}
+
+.school select{
+	padding:7px 13px;
+	*border:0px;
+	*height:20px
+	}
+.school .select-border{
+	*display:inline-block;
+	*border:solid 1px #E3E9EF;
+	*border-top-color:#ABADB3;
+	*padding-top:5px;
+	*padding-bottom:12px;
+	_padding-bottom:7px;
+	_padding-top:6px; /*调整此处改变select高度*/
+	}
+.school .select-hide-border{
+	*display:inline-block;
+	*height:20px;
+	}
+.school .proSelect span.select-border{
+	*padding:5px 0px;
+	
+	}
+.school .proSelect span.select-hide-border,.school .proSelect span.select-border{
+	padding-left:0px;
+	}
+
+.school input[type="text"]:focus{
+	background:url(../images/university.png);
+	background-repeat: no-repeat;
+  	background-position: right center;}
+.proSelect input[type="text"]:focus{
+	background:none;}
+
